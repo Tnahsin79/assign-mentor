@@ -26,7 +26,7 @@ app.get("/students",async function(req,res){
   catch(error)
   {
       res.json({
-          message:"Something went wrong"
+        message:error
       });
   }
 });
@@ -48,7 +48,7 @@ app.post("/student",async function(req,res){
   catch(error)
   {
       res.json({
-          message:"Something went wrong"
+        message:error
       });
   }
 });
@@ -66,7 +66,7 @@ app.get("/mentors",async function(req,res){
   catch(error)
   {
       res.json({
-          message:"mentor went wrong"
+        message:error
       });
   }
 });
@@ -88,7 +88,7 @@ app.post("/mentor",async function(req,res){
   catch(error)
   {
       res.json({
-          message:"Something went wrong"
+          message:error
       });
   }
 });
@@ -128,7 +128,7 @@ app.put("/assign",async function(req,res){
   catch(error)
   {
       res.json({
-          message:"Something went wrong"
+        message:error
       });
   }
 });
