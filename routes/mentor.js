@@ -4,7 +4,8 @@ const bodyParser = require('body-parser');
 const mongodb=require("mongodb");
 const mongoClient=mongodb.MongoClient;
 
-const url="mongodb+srv://Tnahsin79:tnahsin79@guvi-zen.iisub.mongodb.net/student-mentor?retryWrites=true&w=majority";
+//const url="mongodb+srv://Tnahsin79:tnahsin79@guvi-zen.iisub.mongodb.net/student-mentor?retryWrites=true&w=majority";
+const url="mongodb+srv://Tnahsin79:tnahsin79@guvi-zen.iisub.mongodb.net?retryWrites=true&w=majority";
 
 router.get("/",async function(req,res){
     try
