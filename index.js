@@ -9,8 +9,9 @@ const cors=require("cors");
 const url="mongodb+srv://Tnahsin79:tnahsin79@guvi-zen.iisub.mongodb.net/student-mentor?retryWrites=true&w=majority";
 app.use(bodyParser.json());
 app.use(cors({
-  origin:"http://127.0.0.1:5500"
-}))
+  origin:"https://assign-mentor.herokuapp.com"
+}));
+//origin:"http://127.0.0.1:5500"
 
 //student data
 app.get("/students",async function(req,res){
