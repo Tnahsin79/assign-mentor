@@ -100,6 +100,23 @@ app.post("/mentor",async function(req,res){
 });
 
 //assign-mentor
+app.get("/assigns/:id",async function(req,res){
+    try
+    {
+        let client=await mongoClient.connect(url);
+        let db=client.db("student-mentor");
+        let studentArray=await db.collection("mentor").findOne({_id:mongodb.ObjectID(req.params.id)}); 
+        client.close();
+        res.json(studentArray);
+    }
+    catch(error)
+    {
+        client.close();
+        res.json({
+          message:error
+        });
+    }
+  });
 app.put("/assign",async function(req,res){
   try
   {
