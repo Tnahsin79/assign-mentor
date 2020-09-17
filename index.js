@@ -6,10 +6,10 @@ const mongodb=require("mongodb");
 const mongoClient=mongodb.MongoClient;
 const cors=require("cors");
 //const url="mongodb://localhost:27017";
-const url="mongodb+srv://Tnahsin79:tnahsin79@guvi-zen.iisub.mongodb.net/student-mentor?retryWrites=true&w=majority";
+const url="mongodb+srv://Tnahsin79:tnahsin79@guvi-zen.iisub.mongodb.net?retryWrites=true&w=majority";
 app.use(bodyParser.json());
 app.use(cors({
-    origin:"http://127.0.0.1:5500"
+    origin:'http://127.0.0.1:5500'
 }));
 //origin:"https://mentor-and-student.netlify.app"
 //origin:"http://127.0.0.1:5500"
