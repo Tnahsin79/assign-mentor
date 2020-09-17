@@ -9,7 +9,7 @@ const cors=require("cors");
 const url="mongodb+srv://Tnahsin79:tnahsin79@guvi-zen.iisub.mongodb.net?retryWrites=true&w=majority";
 app.use(bodyParser.json());
 app.use(cors({
-    origin:'http://127.0.0.1:5500'
+    origin:"https://mentor-and-student.netlify.app"
 }));
 //origin:"https://mentor-and-student.netlify.app"
 //origin:"http://127.0.0.1:5500"
