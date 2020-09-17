@@ -26,6 +26,7 @@ app.get("/students",async function(req,res){
   }
   catch(error)
   {
+      console.log(error);
       res.json({
         message:error
       });
