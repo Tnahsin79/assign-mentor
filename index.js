@@ -26,6 +26,7 @@ app.get("/students",async function(req,res){
   }
   catch(error)
   {
+      client.close();
       console.log(error);
       res.json({
         message:error
@@ -49,6 +50,7 @@ app.post("/student",async function(req,res){
   }
   catch(error)
   {
+      client.close();
       res.json({
         message:error
       });
@@ -67,6 +69,7 @@ app.get("/mentors",async function(req,res){
   }
   catch(error)
   {
+      client.close();
       res.json({
         message:error
       });
@@ -89,6 +92,7 @@ app.post("/mentor",async function(req,res){
   }
   catch(error)
   {
+      client.close();
       res.json({
           message:error
       });
@@ -129,6 +133,7 @@ app.put("/assign",async function(req,res){
   }
   catch(error)
   {
+      client.close();
       res.json({
         message:error
       });
